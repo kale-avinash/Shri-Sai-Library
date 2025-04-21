@@ -10120,8 +10120,7 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
     .custom-bg {
-      background: linear-gradient(to right, rgba(189, 16, 224, 0.8), rgba(63, 131, 248, 0.8)), 
-                  url('img/your-background-image.jpg') no-repeat center center;
+      background: linear-gradient(to right, rgba(189, 16, 224, 0.8), rgba(63, 131, 248, 0.8));
       background-size: cover;
       color: #fff;
   }
@@ -10163,3 +10162,11 @@ textarea.form-control {
   color:white; /* WhatsApp green */
 }
 /*end icon  */
+
+  .gradient-text {
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(to right, rgba(189, 16, 224, 0.9), rgba(63, 131, 248, 0.9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
