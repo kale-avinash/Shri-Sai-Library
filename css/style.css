@@ -3648,7 +3648,7 @@ input[type="button"].btn-block {
 
 
     .logo {
-      max-width: 350px;
+      max-width: 280px;
       height: auto;
       display: block;
     }
@@ -3656,7 +3656,7 @@ input[type="button"].btn-block {
     /* Optional: Adjust logo size specifically for mobile screens */
     @media (max-width: 768px) {
       .logo {
-        width: 280px; /* Adjust as needed */
+        width: 250px; /* Adjust as needed */
         margin: 0 auto; /* Center it */
       }
     }
@@ -9330,7 +9330,7 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  padding: 7em 0;
+  /* padding: 7em 0; */
   z-index: 0;
   background: #ce4be8;
   background: -moz-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
