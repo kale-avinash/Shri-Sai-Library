@@ -3646,6 +3646,21 @@ input[type="button"].btn-block {
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
+
+    .logo {
+      max-width: 350px;
+      height: auto;
+      display: block;
+    }
+    
+    /* Optional: Adjust logo size specifically for mobile screens */
+    @media (max-width: 768px) {
+      .logo {
+        width: 280px; /* Adjust as needed */
+        margin: 0 auto; /* Center it */
+      }
+    }
+
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
