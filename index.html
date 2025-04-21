@@ -89,7 +89,7 @@
   <div class="overlay"></div>
   <div class="container">
     <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-      <div class="col-md-7 ftco-animate">
+      <div class="col-md-7 ftco-animate text-center">
         <span class="subheading" style="color:beige; font-family: 'Rubik'">Welcome to StudyLab</span>
         <h1 class="mb-4" style="color: white;">A Peaceful Place to <span style="color: #b951e7; font-family: 'Rubik'">Learn, Grow, and Succeed</span> </h1>
         <p class="caps">Experience focused learning with the right environment.</p>
@@ -99,36 +99,7 @@
 </div>
 </div>
 
-<section class="ftco-section ftco-no-pb ftco-no-pt">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-7"></div>
-         <div class="col-md-5 order-md-last">
-          <div class="login-wrap p-4 p-md-5">
-              <h3 class="mb-4">Admit Your Shet</h3>
-              <form action="#" class="signup-form">
-                 <div class="form-group">
-                    <label class="label" for="name">Full Name</label>
-                    <input type="text" class="form-control" placeholder="Full Name">
-                </div>
-                <div class="form-group">
-                 <label class="label" for="Mobile">Mobile</label>
-                 <input id="mobile-field" type="mobile" class="form-control" placeholder="Mobile">
-             </div>
-                <div class="form-group">
-                    <label class="label" for="email">Email</label>
-                    <input type="email" class="form-control" placeholder="Email">
-                </div>
-             <div class="form-group d-flex justify-content-end mt-4">
-                 <button type="submit" class="btn btn-primary submit"><span class="fa fa-paper-plane"></span></button>
-             </div>
-         </form>
-         <button class="btn btn-primary text-center">Save</button>
-     </div>
- </div>
-</div>
-</div>
-</section>
+
 
 
 <!-- about section  -->
@@ -446,37 +417,29 @@
             <h3 class="mb-4">Dedicated to knowledge and service, guided by Sri Sai’s blessings</h3>
             <p>At Shri Sai Abhyasika, we provide a safe, comfortable, and resource-rich study environment to help students stay focused and productive. From modern surveillance to high-speed internet and extended study hours, our services are designed to support every learner’s journey toward success.</p>
             <p>Shri Sai Abhyasika is more than just a study hall—it's a space where dedication meets comfort. With extended hours, essential facilities, and a secure environment, we help students make the most of their study time, every day.</p>
-            <div class="d-flex video-image align-items-center mt-md-4">
-                <a href="#" class="video img d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#videoModal" style="background-image: url(img/img-3.jpg);">
-                  <span class="fa fa-play-circle"></span>
-                </a>
-                <h4 class="ml-4">Learn anything from StudyLab, Watch video</h4>
-              </div>
-              
-              <!-- Video Modal -->
-              <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                  <div class="modal-content bg-dark">
-                    <div class="modal-body p-0">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" id="videoIframe" src="img/v1.mp4" allowfullscreen></iframe>
-                      </div>
+            <div class="container mt-4">
+                <div class="row justify-content-center">
+                  <div class="col-md-10">
+                    <div class="video-wrapper position-relative">
+                      <video 
+                        id="videoPlayer" 
+                        width="100%" 
+                        height="250" 
+                        class="w-100 rounded shadow" 
+                        autoplay 
+                        muted 
+                        controls 
+                        playsinline
+                        style="object-fit: cover;">
+                        
+                        <source src="img/v1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
                     </div>
-                    <!-- Close Button -->
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
                   </div>
                 </div>
               </div>
-          
-              <script>
-                // Close modal manually using jQuery
-                $('#closeModalBtn').click(function() {
-                  $('#videoModal').modal('hide');
-                });
-              </script>
-
+              
 
           </div>
         </div>
