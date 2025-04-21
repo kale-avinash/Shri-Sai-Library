@@ -8919,7 +8919,6 @@ h1, h2, h3, h4, h5,
     border-top: none; }
     .project-wrap .text .advisor {
       font-size: 13px;
-      text-transform: uppercase;
       font-weight: 500; }
       .project-wrap .text .advisor span {
         color: #4986fc; }
