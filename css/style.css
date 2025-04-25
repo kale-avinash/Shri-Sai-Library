@@ -9332,15 +9332,8 @@ textarea.form-control {
   font-size: 16px;
   /* padding: 7em 0; */
   z-index: 0;
-  background: #ce4be8;
-  background: -moz-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, #ce4be8), color-stop(100%, #207ce5));
-  background: -webkit-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-  background: -o-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-  background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-  background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-  background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-  background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+ 
+  background: black   ;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 ); }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
