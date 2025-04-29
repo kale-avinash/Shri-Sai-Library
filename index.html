@@ -88,68 +88,89 @@
 
 
 
-
-
-  <div class="hero-wrap js-fullheight" style="background-image: url('img/bg7.jpg');">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-        <div class="col-md-7 ftco-animate">
-          <span class="subheading text-dark">Welcome to StudyLab</span>
-          <h1 class="mb-4 text-danger font-weight-bold">
-              A Peaceful Place to <br>
-              <span class="gradient-text">Learn, Grow and Succeed.</span>
-            </h1>
-            <p class="caps text-dark">इथे विचार घडतात, आणि विचारांनी भविष्य घडतं.</p>
-      </div>
-  </div>
-  </div>
-  </div>
-
-
-<section class="ftco-section ftco-no-pb ftco-no-pt">
+<!-- Hero Section -->
+<div class="hero-wrap js-fullheight" style="background-image: url('img/bg7.jpg');">
+  <div class="overlay"></div>
   <div class="container">
-     <div class="row">
-        <div class="col-md-7"></div>
-        <div class="col-md-5 order-md-last">
-         <div class="login-wrap p-4 p-md-5">
-             <h3 class="mb-4">Register Now</h3>
-             <form class="signup-form">
-                <div class="form-group">
-                   <label class="label" for="name">Full Name</label>
-                   <input type="text" class="form-control" required placeholder="Full Name">
-               </div>
-               <div class="form-group">
-                   <label class="label" for="date">Mobile</label>
-                   <input type="number" class="form-control" required placeholder="Mobile No">
-               </div>
-               <div class="form-group">
-                <label class="label" for="membershipType">Select Membership Type</label>
-                <select class="form-control" id="membershipType" required>
-                    <option value="">Select Membership</option>
-                    <option value="basic"> Weekly</option>
-                    <option value="premium">Monthly</option>
-                </select>
-            </div>
-            
-               <div class="form-group">
-                   <label class="label" for="email">Email </label>
-                   <input type="text" class="form-control" required placeholder="Email ">
-               </div>
-            <div class="form-group">
-                <label class="label" for="address">Address</label>
-                <textarea type="text" class="form-control" required placeholder="Address"></textarea>
-            </div>
-            <!-- <div class="form-group d-flex justify-content-end mt-4">
-                <button type="submit" class="btn btn-danger submit"><span class="fa fa-paper-plane"></span></button>
-            </div> -->
-          <button  class="text-center btn btn-danger">Register Now</button>
-        </form>
+    <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+      <div class="col-md-7 ftco-animate">
+        <span class="subheading text-dark">Welcome to StudyLab</span>
+        <h1 class="mb-4 text-danger font-weight-bold">
+          A Peaceful Place to <br>
+          <span class="gradient-text">Learn, Grow and Succeed.</span>
+        </h1>
+        <p class="caps text-dark">इथे विचार घडतात, आणि विचारांनी भविष्य घडतं.</p>
+        <!-- Register Button -->
+        <button id="showFormBtn" class="btn btn-danger mt-3">Register Now</button>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-</div>
+
+<!-- Hidden Registration Form -->
+<section id="registrationFormSection" class="ftco-section ftco-no-pb ftco-no-pt" style="display: none;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7"></div>
+      <div class="col-md-5 order-md-last">
+        <div class="login-wrap p-4 p-md-5">
+          <h3 class="mb-4">Register Now</h3>
+          <form id="registerForm" class="signup-form">
+            <div class="form-group">
+              <label class="label" for="name">Full Name</label>
+              <input type="text" class="form-control" required placeholder="Full Name">
+            </div>
+            <div class="form-group">
+              <label class="label" for="date">Mobile</label>
+              <input type="number" class="form-control" required placeholder="Mobile No">
+            </div>
+            <div class="form-group">
+              <label class="label" for="membershipType">Select Membership Type</label>
+              <select class="form-control" id="membershipType" required>
+                <option value="">Select Membership</option>
+                <option value="basic">Weekly</option>
+                <option value="premium">Monthly</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="label" for="email">Email</label>
+              <input type="email" class="form-control" required placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label class="label" for="address">Address</label>
+              <textarea class="form-control" required placeholder="Address"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Register Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- JavaScript -->
+<script>
+  const showFormBtn = document.getElementById("showFormBtn");
+  const formSection = document.getElementById("registrationFormSection");
+  const form = document.getElementById("registerForm");
+
+  showFormBtn.addEventListener("click", function () {
+    showFormBtn.style.display = "none";           // Hide button
+    formSection.style.display = "block";          // Show form
+    formSection.scrollIntoView({ behavior: "smooth" });
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent actual submission (optional — for testing)
+    alert("Form submitted successfully!");
+
+    formSection.style.display = "none";           // Hide form
+    showFormBtn.style.display = "inline-block";   // Show button again
+    showFormBtn.scrollIntoView({ behavior: "smooth" });
+    form.reset(); // Optional: clear form fields
+  });
+</script>
+
 
 
 
